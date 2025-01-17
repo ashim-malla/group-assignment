@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+  padding: 0; /* Resetting the padding and margin of the border-box to 0*/
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+.our-products h2{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.main-ctn{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    justify-content: center;
+}
+
+.category-ctn{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.products-ctn{
+    margin-right: 60px;
+    margin-left: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.product-item{
+    height: 350px;
+    width: 300px;
+    border-style: double;
+    box-shadow: 0 0 2px black;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.product-item img{
+    margin-top: 30px;
+    height: 250px;
+    width: 300px;
+}

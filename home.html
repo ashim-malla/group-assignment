@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/header-footer.css">
+  <link rel="stylesheet" href="css/home.css">
+  <title>Watch Shop</title>
+  <style>
+    /*Using Internal Css*/
+    .recommend-ctn{
+      display: flex;
+      flex-direction: row;
+      justify-content: right;
+      height: 500px;
+      width: 600px;
+      overflow: hidden;
+      position: relative;
+      left: 50%;
+    }
+
+    .recommend-bg-ctn {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  </style>4
+</head>
+<body>
+  <!--Navigation Bar Section Start-->
+  <nav>
+    <div class="nav-bar-container">
+      <div class="left-nav-bar">
+        <a href="home.html"><img src="images/rolex-icon.svg" alt="" height="80px" width="80px"></a>
+        <ul>
+          <li class="nav-items"><a href="home.html">Home</a></li>
+          <li class="nav-items"><a href="product.html">Products</a></li>
+          <li class="nav-items"><a href="#">Blog</a></li>
+          <li class="nav-items"><a href="#">Research</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="right-nav-bar">
+          <div class="nav-icons">
+            <input class="search-box" type="text" placeholder="Search">
+            <a href="#"><img src="images/heart-svgrepo-com.svg" alt="wish-list" height="24px" width="24px"></a>
+            <a href="#"><img src="images/icons8-cart-24.png" alt="cart-icon"></a>
+            <a href="#"><img src="images/LOGIN-10-1024.webp" alt="login-icon" height="22px" width="22px"></a>
+            <a href="#"><img src="images/question-mark-circle.svg" alt="help-icon"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--Navigation Bar Section End-->
+  <!--Middle section start-->
+  <section>
+    <div class="main-section">
+      <div>
+        <video autoplay loop muted src="images/video/rolex.mp4" width="100%" height="auto"></video>
+      </div>
+      <!--
+      <div class="big-image-main-ctn">
+        <div class="big-image-ctn">
+          <div class="big-image-wrapper">
+            <img class="big-image" src="images/ben-mathis-seibel-c03WpEKDgPs-unsplash.jpg" alt="">
+          </div>
+          <div class="big-image-wrapper">
+            <img class="big-image" src="images/ben-mathis-seibel-dNnvotbg35Q-unsplash.jpg" alt="">
+          </div>
+          <div class="big-image-wrapper">
+            <img class="big-image" src="images/caramel-vRcSC-UN3yI-unsplash.jpg" alt="">
+          </div>
+        </div>        
+      </div> 
+    --> 
+      <h2 class="first-title">WE OFFER A WIDE RANGE OF WATCHES</h2>
+      <div class="best-seller-category">
+        <div class="recommend-ctn">
+          <div class="recommend-bg-ctn">
+            <img src="images/pexels-thefstopper-1075189.jpg" alt="">
+          </div>
+        </div>
+        <h2>Best Seller</h2>
+        <div class="best-seller-ctn">
+          <div class="best-selling-item">
+            <img src="images/g-shock-ga-110RL.avif" alt="g-shock-ga-110RL">
+            <p>G-SHOCK GA-110RL</p><!--Watch Name goes here-->
+            <p>$299.99</p>
+            <button class="cart-button">Add to Cart</button>
+
+          </div>
+          <div class="best-selling-item">
+            <img src="images/apple-watch.webp" alt="apple-watch">
+            <p>Apple Watch Ultra</p><!--Watch Name goes here-->
+            <p>$299.99</p>
+            <button class="cart-button">Add to Cart</button>
+          </div>
+          <div class="best-selling-item">
+            <img src="images/TW2W68800.webp" alt="">
+            <p>G-SHOCK GA-110RL</p><!--Watch Name goes here-->
+            <p>$299.99</p>
+            <button class="cart-button">Add to Cart</button> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Title For Category-->
+    <h2 style="
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    padding: 20px 0px;
+
+    ">Category</h2>
+    <!--Creating div for making the containers flex-->
+    <div class="category-ctn">
+      <div class="category-ctn-item">
+        <img src="images/mens-category-tb.jpg" alt="man wearing watch">
+        <div class="center"><span>MEN'S</span></div>
+      </div>
+      <div class="category-ctn-item">
+        <img src="images/women-category.jpg" alt="woman wearing watch">
+        <div class="center"><span>WOMEN'S</span></div>
+      </div>
+    </div>
+    <!--Brands Section-->
+    <h2 class="brands-title">Brands</h2>
+    <div class="brands-ctn">
+      <div class="brand-item">
+        <a href="#"><img src="images/casio-logo-svg.svg" alt="casio logo"></a>
+      </div>
+      <div class="brand-item">
+        <a href="#"><img src="images/seiko-logo.svg" alt="seiko logo"></a>
+      </div>
+      <div class="brand-item">
+        <a href="#"><img src="images/rolex-seeklogo.svg" alt="rolex logo"></a>
+      </div>
+      <div class="brand-item">
+        <a href="#"><img src="images/cartier-logo.svg" alt="cartier logo"></a>
+      </div>
+    </div>
+  </section>
+  <!--Middle section End-->
+
+  <!--Footer Section Start-->
+  <footer>
+    <div id="footer-ctn">
+      <div class="newsletter">
+        <p>
+          Sign Up for email to stay connected
+          Plus, get the latest news & exclusive offers.
+        </p>
+        <input type="text" name="" id="email" placeholder="Please, Enter your email">
+      </div>
+      <div class="help">
+        <h3>HELP</h3>
+        <ul>
+          <li>Support</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div class="terms-conditions">
+        <h3>Terms & Privacy</h3>
+        <ul>
+          <li>Terms & Conditions</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+      <p>&copy;	</p>
+    </div>
+  </footer>
+  <!--Footer Section End-->
+</body>
+</html>

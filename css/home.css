@@ -1,0 +1,185 @@
+*{
+  padding: 0; /* Resetting the padding and margin of the border-box to 0*/
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+
+}
+
+.main-section{
+  margin-top: 20px;
+}
+/*this selects the div container for the image*/
+.big-image-main-ctn{
+  width: 100%;
+  display: flex;
+  height: 500px;
+  overflow: hidden;
+}
+
+.big-image-ctn{
+  width: 300%;
+  height: 500px;
+  background-color: gray;
+  margin: 20px 0;
+  display: flex;
+  animation: slide 10s infinite;
+}
+
+.big-image-wrapper {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.big-image img{
+  width: 100px;
+  height: 100px;
+}
+
+/**/
+.first-title{
+  text-align: left;
+  margin: 10px 20px;
+}
+
+/**/
+.best-seller-category{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*styling the best seller container*/
+.best-seller-ctn{
+  margin-top: 20px;
+  display: flex; /*This make the container a flexbox so that the containers inside can be arranged*/ 
+  flex-direction: row; /*This make the container flex horizontally*/
+  justify-content: space-evenly; /*it is done so that there is equal space between each container*/
+  height: 300px;
+  align-items: center;
+}
+
+/**/
+.best-selling-item{
+  border-style: none;
+  background-image: linear-gradient(60deg, #5C74A3, #4B9CB4);
+  height: 320px;
+  width: 300px;
+  object-fit:contain;
+  align-items: center;
+  padding-top: 10px;
+ /*overflow is set to hidden so that the image cannot exceed the container size*/
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.best-selling-item:hover{
+  cursor: pointer;
+  box-shadow: 5px 0 10px rgb(152, 212, 229);
+  color: red;
+}
+
+/**/
+.best-selling-item img{
+  height: 200px;
+  width: fit-content;
+  margin-bottom: 10px;
+
+}
+
+.best-selling-item p{
+  margin-top: 5px;
+  color: white;
+  background-image: linear-gradient(60deg, #5C74A3, #4B9CB4);
+
+}
+
+.cart-button{
+  background-color: rgb(243, 170, 35);
+  color: white;
+  font-size: 18px;
+  border-style: none;
+  border-radius: 4px;
+  padding: 5px;
+  width: 80%;
+  margin-top: 6px;
+}
+
+
+
+.cart-button:hover{
+  background-color: red;
+}
+/**/
+.category-ctn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 400px;
+  margin-top: 10px;
+}
+
+.category-ctn-item{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  margin-left: 40px;
+  position: relative;
+  background-image: linear-gradient(12deg, #29323c, #505c69 100%);/*Creates a layer of that gradient over the image*/
+}
+
+.category-ctn img{
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+}
+
+.category-ctn-item .center{
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 48%;
+  left: 35%;  
+}
+
+.category-ctn-item div span{
+  align-items: center;
+  font-size: 40px;
+  color: white;
+}
+
+.brands-title{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.brands-ctn{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  overflow: hidden;
+}
+
+.brand-item{
+  height: 200px;
+  width: 200px;  
+  overflow: hidden;
+  margin-left: 40px;
+}
+.brand-item img{
+  height: 100%;
+  width: 100%;
+}
+/*
+For auto changing img animation
+*/
